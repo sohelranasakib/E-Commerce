@@ -36,17 +36,17 @@ const Navber = () => {
         })
     },[cartshow, accountshow, usershow])
   return (
-    <section>
+    <section className=' bg-[#F5F5F3] py-5'>
         <Container>
             <Flex className=" items-center">
-                <div className=" w-[30%] relative left-[60px]">
+                <div className=" w-[30%] z-50 relative left-[60px]">
                     <div ref={cartref} className=" flex gap-x-4 items-center">
                     <FaBars />
                     <h2 className=' font-sans font-bold text-[16px] hidden lg:block lg:text-[#767676] text-white hover:text-[#262626]'>Shop by Category</h2>
                     </div>
                     {cartshow &&
-                    <div className=" absolute top-[50px] left-0 bg-[#262626] w-[250px]">
-                        <ul className=' py-4'>
+                    <div className=" absolute top-[50px] left-0 bg-[#262626] w-[250px] ">
+                        <ul className=' py-4 '>
                             <li className='text-[rgba(255,255,255,0.7)] font-sans text-[16px] py-2 duration-300 ease-in-out pl-3 hover:pl-6 hover:text-white'>Accesories</li>
                             <li className='text-[rgba(255,255,255,0.7)] font-sans text-[16px] py-2 duration-300 ease-in-out pl-3 hover:pl-6 hover:text-white'>Furniture</li>
                             <li className='text-[rgba(255,255,255,0.7)] font-sans text-[16px] py-2 duration-300 ease-in-out pl-3 hover:pl-6 hover:text-white'>Electronics</li>
@@ -72,7 +72,7 @@ const Navber = () => {
                     <IoMdArrowDropdown />
                     </div>
                     {accountshow &&
-                    <div className=" absolute top-[150px] right-[180px] bg-[#262626] w-[200px] py-[10px]">
+                    <div className=" absolute z-50 top-[170px] lg:right-[180px] bg-[#262626] w-[200px] py-[10px]">
                         <div className=" text-center">
                             <h2 className='text-[rgba(255,255,255,0.7)] font-sans font-bold text-[16px] py-2 duration-300 ease-in-out pl-3 hover:pl-6  hover:text-white'>My Account</h2>
                         </div>
@@ -87,7 +87,7 @@ const Navber = () => {
                     <FaCartArrowDown />
                     </div>
                     {usershow &&
-                    <div className=" absolute top-[150px] right-[170px] w-[300px] bg-[#262626]">
+                    <div className=" absolute z-50 top-[170px] lg:right-[170px] w-[300px] bg-[#262626]">
                        <div className=" py-4">
                        <div className=" flex justify-around items-center">
                        <div className="">

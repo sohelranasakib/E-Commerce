@@ -10,12 +10,12 @@ const Header = () => {
   return (
     <section className=' h-[80px]'>
     <Container>
-      <Flex className="justify-between items-center h-[80px]">
-      <div className=" w-[25%]">
+      <Flex className="justify-between items-center h-[80px] ">
+      <div className=" w-[25%] px-2">
           <img src={logo} alt="" />
       </div>
       <div className=" w-[75%]">
-          <ul className={`lg:flex justify-center gap-x-10 lg:static text-center absolute duration-700 ease-out ${show == true ? "bg-[green] top-[100px] left-0 w-full" : "top-[100px] left-[-200px]"}`}>
+          <ul className={`lg:flex justify-center z-50 gap-x-10 lg:static text-center absolute duration-700 ease-out ${show == true ? "bg-[green] top-[80px] left-0 w-full" : "top-[80px] left-[-200px]"}`}>
             <li className='font-sans font-bold text-[16px] lg:text-[#767676] text-white hover:text-[#262626]'>Home</li>
             <li className='font-sans font-bold text-[16px] lg:text-[#767676] text-white hover:text-[#262626]'>Shop</li>
             <li className='font-sans font-bold text-[16px] lg:text-[#767676] text-white hover:text-[#262626]'>About</li>
